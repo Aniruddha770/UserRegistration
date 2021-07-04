@@ -6,28 +6,28 @@ public class UserRegistrationTesting {
 	  @Test
 	    public void givenFirstName_whenProper_ShouldReturnTrue() {
 	        UserRegistrationRegEx userRegistrationRegEx = new UserRegistrationRegEx();
-	        boolean result = userRegistrationRegEx.firstNameValidate("Prathamesh");
+	        boolean result = userRegistrationRegEx.firstNameValidate("Aniruddha");
 	        Assert.assertTrue(result);
 	    }
 
 	    @Test
 	    public void givenFirstName_whenNotProper_ShouldReturnFalse() {
 	        UserRegistrationRegEx userRegistrationRegEx = new UserRegistrationRegEx();
-	        boolean result = userRegistrationRegEx.firstNameValidate("pratham");
+	        boolean result = userRegistrationRegEx.firstNameValidate("ani");
 	        Assert.assertFalse(result);
 	    }
 
 	    @Test
 	    public void givenLastName_whenProper_ShouldReturnTrue() {
 	        UserRegistrationRegEx userRegistrationRegEx = new UserRegistrationRegEx();
-	        boolean result = userRegistrationRegEx.lastNameValidate("Tibile");
+	        boolean result = userRegistrationRegEx.lastNameValidate("Patil");
 	        Assert.assertTrue(result);
 	    }
 
 	    @Test
 	    public void givenLastName_whenNotProper_ShouldReturnFalse() {
 	        UserRegistrationRegEx userRegistrationRegEx = new UserRegistrationRegEx();
-	        boolean result = userRegistrationRegEx.lastNameValidate("Ti");
+	        boolean result = userRegistrationRegEx.lastNameValidate("Pa");
 	        Assert.assertFalse(result);
 	    }
 
